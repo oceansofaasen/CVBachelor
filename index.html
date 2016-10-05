@@ -45,21 +45,39 @@
 	</div>
 </div>
 
-<div class="modal fade" id="server_msg_modal">
+<div class="modal fade" id="popup1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Modal title</h4>
+        <h4 class="modal-title">Public static void man project</h4>
       </div>
       <div class="modal-body">
-        <p>Modal body</p>
+        <p>Laget i wordpress. Animerte bakgrunner. Mobil vennlig. Soundcloud kobling. Grafisk design</p>
         <img id="content" class="img-responsive" src="pics/psvmejn.jpg">
-        <img id="sticker" class="img-responsive" src="pics/gul1.png" width="30%" height="236">
+        <img id="sticker" class="img-responsive" src="pics/gul1.png" width="30%">
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+<div class="modal fade" id="popup2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">hissig design prosjekt!</h4>
+      </div>
+      <div class="modal-body">
+        <p>HELT VILLT PROSJEKT!!!!!</p>
+        <img id="content" class="img-responsive" src="pics/bejm.jpg">
+        <img id="sticker" class="img-responsive" src="pics/gul1.png" width="30%">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 <script>
     $(function() {
     	var lapp1 = "pics/lapp_open.gif";
@@ -76,8 +94,13 @@
 
         $("#paper").click(
         	function() {
-        		$('#server_msg_modal').modal('show');
+        		$('#popup1').modal('show');
         	})
+
+        $("#popup1").on("swipeleft", function() {
+        	$("#popup1").modal('hide');
+        	$('#popup2').modal('show');
+        })
 /*
         $( "#outer" ).mouseout(function() {
   		$( "#log" ).append( "Handler for .mouseout() called." );
