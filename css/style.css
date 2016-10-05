@@ -4,9 +4,14 @@ body
     background-image: url('../pics/dotted_bg.png')!important;
 	background-repeat: repeat;
 }
-.modal{
-	position: absolute;
-	height: auto;
+.modal
+{
+	
+}
+.modal-body 
+{
+	max-height: calc(100vh - 210px);
+	overflow-y: auto;
 }
 
 .modal-content

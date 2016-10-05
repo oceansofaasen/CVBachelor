@@ -19,17 +19,18 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-3">
 
-		<h2>Project 1 mafakkas</h2>
+		<h2>Public static void manne</h2>
 		<!--<input type="button" class="btn btn-success" id="paper" >yeah</div> -->
 
-		<img id="paper" src="pics/lappen.png" class="img-responsive">
+			<img id="paper" src="pics/lappen.png" class="img-responsive">
 
 		</div>
 		<!-- Add clearfix for only the required viewport -->
     	<div class="clearfix visible-xs"></div>
 
-		<div class="col-xs-12 col-sm-4"><h2>Project 2 mafakkas 
-			
+		<div class="col-xs-12 col-sm-4"><h2>Sykt prosjekt!!!!</h2> 
+
+			<img id="paper2" src="pics/lappen.png" class="img-responsive">
 		</div>
 		<div class="clearfix visible-xs"></div>
 
@@ -84,7 +85,7 @@
     	var lapp1 = "pics/lapp_open.gif";
     	 //$("#paper").attr("src", "pics/lapp_open.gif");
     	 //alert("hola");
-        $("#paper").hover(
+        $($('[id^=paper]')).hover(
             function() {
             	//alert("faggot");
                 $(this).attr("src", lapp1/*"pics/lapp_open.gif"*/);
@@ -93,13 +94,16 @@
             }     
          );  
 
-        $("#paper").click(
-        	function() {
+        $("#paper").click(function() {
         		$('#popup1').modal('show');
         	})
 
         $("#popup1").on("swipeleft", function() {
         	$("#popup1").modal('hide');
+        	$('#popup2').modal('show');
+        })
+
+        $("#paper2").click(function() {
         	$('#popup2').modal('show');
         })
 /*
