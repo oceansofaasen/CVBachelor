@@ -10,3 +10,16 @@ body
 	background-image: url('../pics/papir.png');
 	height: auto;
 }
+
+#sticker{
+	left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+#content {
+	position: relative;
+    display: block;
+}
