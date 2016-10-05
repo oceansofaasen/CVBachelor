@@ -4,6 +4,10 @@ body
     background-image: url('../pics/dotted_bg.png')!important;
 	background-repeat: repeat;
 }
+.modal{
+	position: absolute;
+	height: auto;
+}
 
 .modal-content
 {
@@ -14,6 +18,14 @@ body
     -moz-border-radius: 0px !important;
     border-radius: 0px !important; 
 
+}
+
+#teip {
+	left: 15%;
+	top: 70%;
+	position: absolute;
+	margin-top: -79px;
+	margin-left: 60px;
 }
 
 #sticker{
