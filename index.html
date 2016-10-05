@@ -83,15 +83,17 @@
 <script>
     $(function() {
     	var lapp1 = "pics/lapp_open.gif";
+    	var lapp2 = "pics/lapp_close.gif";
     	 //$("#paper").attr("src", "pics/lapp_open.gif");
     	 //alert("hola");
-        $($('[id^=paper]')).hover(
-            function() {
+    	 /*'[id^=paper]'*/
+        $("#paper, #paper2").hover(function() {
             	//alert("faggot");
                 $(this).attr("src", lapp1/*"pics/lapp_open.gif"*/);
-            }, function() {
-                $(this).attr("src", "pics/lappen.png");
-            }     
+            }, (function() {
+                $(this).attr("src", lapp2);
+            
+            })    
          );  
 
         $("#paper").click(function() {
