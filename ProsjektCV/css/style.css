@@ -1,0 +1,12 @@
+
+body
+{
+    background-image: url('../pics/dotted_bg.png')!important;
+	background-repeat: repeat;
+}
+
+.modal-content
+{
+	background-image: url('../pics/papir.png');
+	height: auto;
+}
